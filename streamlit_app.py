@@ -14,7 +14,7 @@ st.set_page_config(page_title="Harry Markowitz frente a la Inteligencia Artifici
 
 st.image("URC.png", caption="LCFI-URC Universidad Rosario Castellanos", width=200)
 
-st.title("Sala de Espera | Conferencia "Harry Markowitz frente a la Inteligencia Artificial" ")
+st.title("Sala de Espera | Conferencia: Harry Markowitz frente a la Inteligencia Artificial ")
 
 # Configura la hora de la reunión
 meeting_time_str = "2024-11-08 13:00:00"  # Reemplaza con la fecha y hora de tu reunión
