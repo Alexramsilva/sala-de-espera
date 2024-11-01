@@ -10,14 +10,11 @@ Original file is located at
 import streamlit as st
 from datetime import datetime, timedelta
 
-
+# Configuración inicial: este debe ser el primer comando de Streamlit después de las importaciones
+st.set_page_config(page_title="Harry Markowitz frente a la Inteligencia Artificial", layout="centered")
 
 st.image("URC.png", caption="LCFI-URC Universidad Rosario Castellanos", width=200)
 
-
-
-# Configuración inicial
-st.set_page_config(page_title="Harry Markowitz frente a la Inteligencia Artificial", layout="centered")
 st.title("Sala de Espera para Reunión en Zoom")
 
 # Configura la hora de la reunión
