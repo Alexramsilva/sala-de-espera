@@ -10,7 +10,6 @@ Original file is located at
 import streamlit as st
 from datetime import datetime, timedelta
 
-# Configuración inicial: este debe ser el primer comando de Streamlit después de las importaciones
 st.set_page_config(page_title="Harry Markowitz frente a la Inteligencia Artificial", layout="centered")
 
 st.image("URC.png", caption="LCFI-URC Universidad Rosario Castellanos", width=200)
@@ -44,12 +43,10 @@ if time_remaining.total_seconds() > 0:
 else:
     st.write("La reunión ha comenzado. Puedes unirte ahora.")
 
-# Botón para redirigir a la reunión en Zoom cuando sea la hora
-if time_remaining.total_seconds() <= 0:
-    meeting_link = "https://us06web.zoom.us/j/82156977959?pwd=A8TZOI6dQSzYTxr5T3BZpacQtEfZb3.1"  # Coloca aquí el enlace de Zoom
-    st.markdown(f"[Unirse a la reunión en Zoom]({meeting_link})", unsafe_allow_html=True)
-else:
-    st.write("Por favor, espera hasta que sea la hora de la reunión.  (clave de acceso: 360529)")
+# Liga de Zoom
+meeting_link = "https://us06web.zoom.us/j/82156977959?pwd=A8TZOI6dQSzYTxr5T3BZpacQtEfZb3.1"  # Coloca aquí el enlace de Zoom
+st.markdown(f"[Unirse a la reunión en Zoom]({meeting_link})", unsafe_allow_html=True)
+st.write("Clave de acceso: 360529")
 
 # Personalización de diseño
 st.markdown("""
