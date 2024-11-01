@@ -10,11 +10,11 @@ Original file is located at
 import streamlit as st
 from datetime import datetime, timedelta
 
-st.set_page_config(page_title="Harry Markowitz frente a la Inteligencia Artificial", layout="centered",theme="light")
+st.set_page_config(page_title="Harry Markowitz frente a la Inteligencia Artificial", layout="centered")
 
 st.image("URC.png", caption="LCFI-URC Universidad Rosario Castellanos", width=200)
 
-st.title("Sala de Espera | Conferencia: Harry Markowitz frente a la Inteligencia Artificial ")
+st.title("Sala de Espera (Conferencia: Harry Markowitz frente a la Inteligencia Artificial) ")
 
 # Configura la hora de la reunión
 meeting_time_str = "2024-11-08 13:00:00"  # Reemplaza con la fecha y hora de tu reunión
@@ -27,7 +27,7 @@ def get_time_remaining():
     return meeting_time - now
 
 # Muestra un mensaje de bienvenida
-st.write("Bienvenido a la sala de espera | Conferencia: Harry Markowitz frente a la Inteligencia Artificial")
+st.write("Conferencia: Harry Markowitz frente a la Inteligencia Artificial")
 st.write("La reunión comenzará en la siguiente fecha y hora:")
 st.write(meeting_time.strftime("%d %B %Y, %H:%M:%S"))
 
