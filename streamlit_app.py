@@ -27,7 +27,7 @@ def get_time_remaining():
     return meeting_time - now
 
 # Muestra un mensaje de bienvenida
-st.write("Bienvenido a la sala de espera | Conferencia: "Harry Markowitz frente a la Inteligencia Artificial"")
+st.write("Bienvenido a la sala de espera | Conferencia: Harry Markowitz frente a la Inteligencia Artificial")
 st.write("La reunión comenzará en la siguiente fecha y hora:")
 st.write(meeting_time.strftime("%d %B %Y, %H:%M:%S"))
 
