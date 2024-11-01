@@ -27,7 +27,7 @@ def get_time_remaining():
     return meeting_time - now
 
 # Muestra un mensaje de bienvenida
-st.write("Conferencia: Harry Markowitz frente a la Inteligencia Artificial")
+st.write("Nos dará mucho gusto que nos puedas acompañar")
 st.write("La reunión comenzará en la siguiente fecha y hora:")
 st.write(meeting_time.strftime("%d %B %Y, %H:%M:%S"))
 
@@ -52,7 +52,7 @@ st.write("Clave de acceso: 360529")
 st.markdown("""
 <style>
     .stApp {
-        background-color:  #da3262;
+        background-color:  #00FF00;
     }
     .css-1d391kg {
         color:  #faf7f8;
@@ -67,7 +67,7 @@ st.markdown("<hr>", unsafe_allow_html=True)
 st.markdown("""
     <div class="container col-sm-5 creditos text-center">
         <p style="margin-top:0;margin-bottom:0;font-size:15px;color: #424040;text-align:center">
-            <strong>2DA EDICIÓN DE JORNADAS FINANCIERAS:</strong>
+            <strong>2DA EDICIÓN DE JORNADAS FINANCIERAS</strong>
         </p>
         <p style="margin-top:0;margin-bottom:0;font-size:12px;color:  #979394 ;text-align:center">
             <strong>"Harry Markowitz frente a la Inteligencia Artificial"</strong>
