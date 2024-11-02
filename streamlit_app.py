@@ -46,7 +46,7 @@ else:
 # Liga de Zoom
 meeting_link = "https://us06web.zoom.us/j/82156977959?pwd=A8TZOI6dQSzYTxr5T3BZpacQtEfZb3.1"  # Coloca aquí el enlace de Zoom
 st.markdown(f"[Unirse a la reunión en Zoom]({meeting_link})", unsafe_allow_html=True)
-st.markdown(<p style='font-size:20px; font-weight:bold;'>"Clave de acceso: 360529", unsafe_allow_html=True)
+st.markdown("<p style='font-size:20px; font-weight:bold;'>Clave de acceso: 360529</p>", unsafe_allow_html=True)
 
 # Personalización de diseño
 st.markdown("""
