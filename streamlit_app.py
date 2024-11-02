@@ -28,8 +28,8 @@ def get_time_remaining():
 
 # Muestra un mensaje de bienvenida
 st.markdown("<p style='font-size:20px; font-weight:bold;'>¡Nos dará mucho gusto que nos puedas acompañar!</p>", unsafe_allow_html=True)
-st.write("La reunión comenzará en la siguiente fecha y hora:")
-st.write(meeting_time.strftime("%d %B %Y, %H:%M:%S"))
+st.markdown("La reunión comenzará en la siguiente fecha y hora:")
+st.markdown(meeting_time.strftime("%d %B %Y, %H:%M:%S"))
 
 # Calcula el tiempo restante y muestra un temporizador
 time_remaining = get_time_remaining()
@@ -45,7 +45,7 @@ else:
 
 # Liga de Zoom
 meeting_link = "https://us06web.zoom.us/j/82156977959?pwd=A8TZOI6dQSzYTxr5T3BZpacQtEfZb3.1"  # Coloca aquí el enlace de Zoom
-st.markdown(f"[Unirse a la reunión en Zoom]({meeting_link})", unsafe_allow_html=True)
+st.markdown("<p style='font-size:20px; font-weight:bold;'>f"[Unirse a la reunión en Zoom]({meeting_link})</p>" ", unsafe_allow_html=True)
 st.markdown("<p style='font-size:20px; font-weight:bold;'>Clave de acceso: 360529</p>", unsafe_allow_html=True)
 
 # Personalización de diseño
