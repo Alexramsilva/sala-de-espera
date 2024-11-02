@@ -28,7 +28,7 @@ def get_time_remaining():
 
 # Muestra un mensaje de bienvenida
 st.markdown("<p style='font-size:20px; font-weight:bold;'>¡Nos dará mucho gusto que nos puedas acompañar!</p>", unsafe_allow_html=True)
-st.markdown("<p style='color:#FF0000;'>La reunión comenzará en la siguiente fecha y hora:</p>", unsafe_allow_html=True)
+st.markdown("<p style='color:#FF0000; font-weight:bold;'>La conferencia comenzará en la siguiente fecha y hora:</p>", unsafe_allow_html=True)
 st.markdown(meeting_time.strftime("%d %B %Y, %H:%M:%S"))
 
 # Calcula el tiempo restante y muestra un temporizador
