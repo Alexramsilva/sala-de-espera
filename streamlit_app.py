@@ -29,7 +29,9 @@ def get_time_remaining():
 # Muestra un mensaje de bienvenida
 st.markdown("<p style='font-size:20px; font-weight:bold;'>¡Nos dará mucho gusto que nos puedas acompañar!</p>", unsafe_allow_html=True)
 st.markdown("<p style='color:#FF0000; font-weight:bold;'>La conferencia comenzará en la siguiente fecha y hora:</p>", unsafe_allow_html=True)
-st.markdown(meeting_time.strftime("%d %B %Y, %H:%M:%S"))
+# st.markdown(meeting_time.strftime("%d %B %Y, %H:%M:%S"))
+st.markdown(f"<p style='font-weight:bold;'>{meeting_time.strftime('%d %B %Y, %H:%M:%S')}</p>", unsafe_allow_html=True)
+
 
 # Calcula el tiempo restante y muestra un temporizador
 time_remaining = get_time_remaining()
@@ -39,13 +41,15 @@ if time_remaining.total_seconds() > 0:
     hours = seconds // 3600
     minutes = (seconds % 3600) // 60
     seconds = seconds % 60
-    st.write(f"Tiempo restante: {days} días, {hours} horas, {minutes} minutos, {seconds} segundos")
+    # st.write(f"Tiempo restante: {days} días, {hours} horas, {minutes} minutos, {seconds} segundos")
+    st.markdown(f"<p style='font-weight:bold; font-size:16px;'>Tiempo restante: {days} días, {hours} horas, {minutes} minutos, {seconds} segundos</p>", unsafe_allow_html=True)
+
 else:
-    st.write("La reunión ha comenzado. Puedes unirte ahora.")
+    st.write("La conferencia ha comenzado. Puedes unirte ahora.")
 
 # Liga de Zoom
 meeting_link = "https://us06web.zoom.us/j/82156977959?pwd=A8TZOI6dQSzYTxr5T3BZpacQtEfZb3.1"  # Coloca aquí el enlace de Zoom
-st.markdown(f"<p style='font-size:20px; font-weight:bold;'><a href='{meeting_link}' target='_blank'>Unirse a la reunión en Zoom</a></p>", unsafe_allow_html=True)
+st.markdown(f"<p style='font-size:20px; font-weight:bold;'><a href='{meeting_link}' target='_blank'>Unirse al evento en Zoom</a></p>", unsafe_allow_html=True)
 st.markdown("<p style='font-size:20px; font-weight:bold;'>Clave de acceso: 360529</p>", unsafe_allow_html=True)
 
 # Personalización de diseño
