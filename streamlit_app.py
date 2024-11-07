@@ -51,6 +51,7 @@ else:
 meeting_link = "https://us06web.zoom.us/j/82156977959?pwd=A8TZOI6dQSzYTxr5T3BZpacQtEfZb3.1"  # Coloca aquí el enlace de Zoom
 st.markdown(f"<p style='font-size:20px; font-weight:bold;'><a href='{meeting_link}' target='_blank'>Unirse al evento en Zoom</a></p>", unsafe_allow_html=True)
 st.markdown("<p style='font-size:20px; font-weight:bold;'>Clave de acceso: 360529</p>", unsafe_allow_html=True)
+st.markdown("<p style='font-size:20px; font-weight:bold;'>ID de reunión: 821 5697 7959 </p>", unsafe_allow_html=True)
 
 # Personalización de diseño
 st.markdown("""
