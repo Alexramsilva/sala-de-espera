@@ -45,7 +45,7 @@ if time_remaining.total_seconds() > 0:
     st.markdown(f"<p style='font-weight:bold; font-size:16px;'>Tiempo restante: {days} días, {hours} horas, {minutes} minutos, {seconds} segundos</p>", unsafe_allow_html=True)
 
 else:
-    st.write("La conferencia ha comenzado. Puedes unirte ahora.")
+    st.write("La conferencia inicia 13:00 horas (tiempo CDMX)")
 
 # Liga de Zoom
 meeting_link = "https://us06web.zoom.us/j/82156977959?pwd=A8TZOI6dQSzYTxr5T3BZpacQtEfZb3.1"  # Coloca aquí el enlace de Zoom
